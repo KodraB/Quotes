@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+#main-header {
+  background-color: #23282D;
+}
+
+#main-header h1 {
+  color: #fff;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 225px;
+  flex: 0 0 12em;
+  background-color: #23282D;
+}
+
+#sidebar ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#sidebar ul li {
+  text-align: left;
+  color: #eee;
+  padding: 0 0 20px 10px;
+}
+
+#sidebar ul li:hover {
+  cursor: pointer;
+  background-color: #32343c;
+}
+
+/* Quotes */
+#post-container {
+  flex: 1;
+  background-color: black;
+  color:lightgrey;
+  padding: 1% 1% 10% 10%;
+}
+
+#intro {
+  display: none;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 1em 1em 1em 0;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '"';
+}
+
+/* Author */
+.author {
+  width: 100%;
+  display: inline-block;
+  text-indent: 5%;
+}
+
+.author:before {
+  content: '-';
+}
